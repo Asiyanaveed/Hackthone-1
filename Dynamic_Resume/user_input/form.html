@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dynamic Resume</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
@@ -13,44 +13,78 @@
         <fieldset>
             <legend>Personal Information</legend>
             <label for="name">Name:</label>
-            <input type="text"  id="name" name="name" required>
+            <input type="text"  id="name" name="name" placeholder="Enter your name" required>
+            <br>
+            <br>
+            <label for="jobtitle">Jobtitle:</label>
+            <input type="text"  id="jobtitle" name="jobtitle" placeholder="Enter your jobtitle" required>
             <br>
             <br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required >
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required >
              <br>
              <br>
             <label for="contact">Contact No:</label>
-            <input type="phone" id="contact" name="contact" required >
+            <input type="tel" id="contact" name="contact" placeholder="Enter  your contact no" required >
+            <br>
+            <br>
+            <label for="linkedin">Linkedin:</label>
+            <input type="text" id="linkedin" name="linkedin" placeholder="Enter  your linkedin Id" required >
+
         </fieldset>
          <br>
         <fieldset>
             <legend>Education</legend>
-            <label for="Education">Education</label>
-            <textarea name="education" id="education" rows="4" required></textarea>
+            <label for="degree">Degree:</label>
+            <input type="text" name="degree" id="degree"  placeholder ="Enter your Education" required></input>
+            <br>
+            <br>
+            <label for="university">University:</label>
+            <input type="text" name="university" id="university" placeholder="Enter your University" required></input>
+            <br>
+            <br>
+            <label for="year">Year:</label>
+            <input type="number" name="year" id="year" placeholder="Enter your year" required></input>
             <br>
         </fieldset>
           <br>
         <fieldset>
-            <legend>Experience</legend>
-            <label for="Experience">Experience</label>
-            <textarea name="Experience" id="Experience" rows="4" required></textarea>
+            <legend>Work Experience</legend>
+            <label for="Experience">Experience:</label>
+            <input type="text" name="experience" id="experience" placeholder="Enter your experience"></input>
             <br>
         </fieldset>
         <br>
         <fieldset>
             <legend>Skills</legend>
-            <label for="Skills">Skills</label>
-            <textarea name="Skills" id="Skills" rows="4" required></textarea>
+            <label for="skill1">Skill 1:</label>
+            <input name="skill1" id="skill1" placeholder="Enter your skill" required></input>
+            <br>
+            <br>
+            <label for="skill2">Skill 2:</label>
+            <input name="skill2" id="skill2" placeholder="Enter your skill" required></input>
+            <br>
+            <br>
+            <label for="skill3">Skill 3:</label>
+            <input name="skill" id="skill3" placeholder="Enter your skill" required></input>
             <br>
         </fieldset>
         <br>
         <br>
-        <a href="../preview_resumee/DynamicResume.html"><button id="Resumebtn" type="submit">Generate Resume</button></a>
+        <fieldset>
+            <legend>Profile Picture</legend>
+            <label for="profilePic">Upload Profile Picture:</label>
+            <input type="file" id="profilepic" name="profilePic" accept="image/*" required >
+        </fieldset>
+        <br>
+        <br>
+        <button id="Resumebtn" type="submit">Generate Resume</button>
 
     </form>
 </div>
     
+<script src="./form.js"></script>
 </body>
-<script src="form.js"></script>
+
+
 </html>
