@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
     }
 
     let username = name ? name.toLowerCase().replace(/\s+/g, '') : 'user';
-    let baseUrl = 'http://127.0.0.1:5500/Dynamic_Resume/preview_resumee/DynamicResume.html';
+    let baseUrl = 'https://hackthone-1.vercel.app/Dynamic_Resume/preview_resumee/DynamicResume.html';
     let uniqeUrl = `${baseUrl}?/${username}`;
 
     let resumeLink = document.getElementById('resumelink') as HTMLAnchorElement;
